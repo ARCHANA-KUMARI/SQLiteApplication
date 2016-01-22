@@ -25,7 +25,7 @@ public class DatabaseAdapter {
         long id = sqLiteDatabase.insert(Helper.TABLE_NAME,null,contentValues);
         return id;
     }
-  /*  public String  getAllData(){
+   public String  getAllData(){
 
          StringBuffer stringBuffer = new StringBuffer();
         //Select UID,NAME and PASSWORD
@@ -41,7 +41,8 @@ public class DatabaseAdapter {
         }
         return stringBuffer.toString();
 
-    }*/
+    }
+    //This getAllData is for displaying data as listView
   public Cursor getAllData(SQLiteDatabase sqLiteDatabase){
 
       StringBuffer stringBuffer = new StringBuffer();
@@ -150,5 +151,6 @@ public class DatabaseAdapter {
                 Message.message(context, "" + e);
             }
         }
+
     }
 }
