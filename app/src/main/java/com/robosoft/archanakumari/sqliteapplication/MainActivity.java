@@ -1,5 +1,6 @@
 package com.robosoft.archanakumari.sqliteapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -39,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void viewAllDetails(View view) {
 
-        String data = databaseAdapter.getAllData();
-        Message.message(this, data);
-        //Display list into another activity class
-       /*  Intent intent = new Intent(this,DataListActivity.class);
-        startActivity(intent);*/
+       // String data = databaseAdapter.getAllData();
+
+        //Message.message(this, data);
+        Intent intent = new Intent(this,DataListActivity.class);
+        startActivity(intent);
     }
 
     public void getDetails(View view) {
@@ -65,8 +66,5 @@ public class MainActivity extends AppCompatActivity {
         int noOfRows = databaseAdapter.deleteRow();
         Message.message(this," "+noOfRows);
     }
-    //just for check
-    public void getMessag(){}
-    //Line two added in Main Activity
 
 }
