@@ -67,5 +67,6 @@ public class MainActivity extends AppCompatActivity {
     }
     //just for check
     public void getMessag(){}
+    //Line two added in Main Activity
 
 }
