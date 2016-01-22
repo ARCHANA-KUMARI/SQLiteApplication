@@ -66,5 +66,6 @@ public class MainActivity extends AppCompatActivity {
         int noOfRows = databaseAdapter.deleteRow();
         Message.message(this," "+noOfRows);
     }
-//last line added
+//line1 added
+    //line2 added
 }
